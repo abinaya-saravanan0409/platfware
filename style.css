@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Gabarito", sans-serif;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+.navbar__s1__title{
+    color: rgb(237, 9, 237);
+}
+
+.navbar__s1__title:hover{
+    cursor:default;
+}
+
+.navbar__s2{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar__s2 input{
+    font-size: 20px;
+    border: none;
+    width: 100%;
+}
+
+.navbar__s2 input:focus{
+    outline: none;
+}
+
+.navbar__s3{
+    display: flex;
+    gap: 15px;
+}
+
+.navbar__s3:hover{
+    cursor: pointer;
+}
+
+.navbar__s4{
+    display: none;
+}
+
+.mylearning{
+    position: relative;
+}
+
+.mylearning__popup{
+    position: absolute;
+    border: solid black 2px;
+    width: 150px;
+    right: 0%;
+    top: 30px;
+    display: none;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+
+.mylearning:hover .mylearning__popup{
+    display: block;
+} 
+
+.category{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: solid black 1px;
+}
+
+.category p{ 
+    background-color: rgba(236, 9, 209, 0.742);
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border:solid 2px rgba(236, 9, 209, 0.742);
+}
+
+.category p:hover{
+    color: black;
+    transition: 1s;
+    background-color: transparent;
+}
+
+.sale-image img{
+     width: 100%;
+     position: relative;
+}
+
+.recommended-container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.recommended__course1,.recommended__course2,.recommended__course3,.recommended__course4{
+    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+}
+
+.recommended__course1 img,.recommended__course2 img,.recommended__course3 img,.recommended__course4 img{
+    width: 100%;
+    height: 200px;
+}
+
+.topics{
+     padding: 10px;
+}
+
+.topics__1{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+   
+}
+
+.topics__1 p{
+    border: solid grey 2px;
+    flex-grow: 1;
+    padding: 10px;
+    flex-basis: 25%;
+}
+
+.popular{
+    padding: 10px;
+}
+
+.popular-container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.popular__container__1,.popular__container__2,.popular__container__3,.popular__container__4,.popular__container__5,.popular__container__6,.popular__container__7,.popular__container__8{
+    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+  
+}
+
+.popular__container__1 img,.popular__container__2 img,.popular__container__3 img,.popular__container__4 img,.popular__container__5 img,.popular__container__6 img,.popular__container__7 img,.popular__container__8 img{
+    width: 100%;
+    height: 200px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+}
+
+.footer__one{
+    display: flex;
+}
+
+.footer__s1,.footer__s2{
+    padding: 10px;
+}
+
+.footer__s1 p,.footer__s2 p{
+    margin: 20px;
+    cursor: pointer;
+}
+
+.footer__s3{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sales-image__box{
+    border: solid black 2px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    width: 300px;
+    top: 40%;
+    left: 100px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:600px) {
+
+    body{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    .recommended__course1,.recommended__course2,.recommended__course3,.recommended__course4{
+        width: 180px;
+        flex-basis: 40%;
+        margin: 10px;
+
+    }
+
+    .popular__container__1,.popular__container__2,.popular__container__3,.popular__container__4,.popular__container__5,.popular__container__6,.popular__container__7,.popular__container__8{
+        width: 180px;
+        flex-basis: 40%;
+    }
+
+
+    .sales-image__box{
+      width:180px;
+      top: 100px;
+      left: 30px;
+    }
+  
+    .category{
+        display: none;
+    }
+     
+    .navbar__s2,.navbar__s3{
+        display: none;
+
+    }
+    
+    .navbar__s4{
+       display: block;
+    }
+}
+
+
+
